@@ -54,7 +54,7 @@ function StakeForm() {
   }
 
   return (
-    <div>
+    <div className='text-black'>
       <Form
         onSubmit={handleStakeSubmit}
         data={[

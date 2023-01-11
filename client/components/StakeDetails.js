@@ -62,10 +62,10 @@ function StakeDetails() {
   
 }, [account, getEarnedBalance, getRTBalance, getStakedBalance, isWeb3Enabled]);
 return (
-    <div>
-      <div>RT Balance is: {rtBalance}</div>
-      <div>Earned Balance is: {earnedBalance}</div>
-      <div>Staked Balance is: {stakedBalance}</div>
+    <div className='p-3'>
+      <div className='font-bold m-2'>RT Balance is: {rtBalance}</div>
+      <div className='font-bold m-2'>Earned Balance is: {earnedBalance}</div>
+      <div className='font-bold m-2'>Staked Balance is: {stakedBalance}</div>
     </div>
   );
 }
