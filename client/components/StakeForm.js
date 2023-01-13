@@ -6,8 +6,8 @@ import { Form } from 'web3uikit';
 import { ethers } from 'ethers';
 
 function StakeForm() {
-  const stakingAddress = process.env.STAKING
-  const tesTokenAddress = process.env.REWARD_TOKEN;
+  const stakingAddress = "0x6c096882F49f46ab685885d04c7Cc18dE27051f1";
+  const tesTokenAddress = "0xeA82949B74bf295777FF9e0BC368F7023cF5F3c5";
 
   const { runContractFunction } = useWeb3Contract();
 
@@ -49,18 +49,18 @@ function StakeForm() {
       onError: (error) => console.log(error)
     });
 
-    await tx.wait(1);
+    await tx.wait(0);
     console.log('Stake transaction complete');
   }
 
   return (
-    <div>
+    <div className='text-black'>
       <Form
         onSubmit={handleStakeSubmit}
         data={[
           {
             inputWidth: '50%',
-            name: 'Amount to stake (in ETH)',
+            name: 'Amount to stake ',
             type: 'number',
             value: '',
             key: 'amountToStake'
