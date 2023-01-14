@@ -6,8 +6,8 @@ import { Form } from 'web3uikit';
 import { ethers } from 'ethers';
 
 function StakeForm() {
-  const stakingAddress = "0x6c096882F49f46ab685885d04c7Cc18dE27051f1";
-  const tesTokenAddress = "0xeA82949B74bf295777FF9e0BC368F7023cF5F3c5";
+  const stakingAddress = "0x5f2839D359321e7B4504420A7c1648697aB4fFaB";
+  const tesTokenAddress = "0x31352b63427113A9f654ef177e969C63406F22EE";
 
   const { runContractFunction } = useWeb3Contract();
 
